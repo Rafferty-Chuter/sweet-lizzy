@@ -1,26 +1,28 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ============================================================
+   Sweet Lizzy — Candy Palette (Tailwind v4 CSS-based config)
+   ============================================================ */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Custom colours */
+  --color-candy-cream: #fdf6ec;
+  --color-candy-peach: #fce4c8;
+  --color-candy-pink: #f9a8d4;
+  --color-candy-rose: #e11d7a;
+  --color-candy-amber: #f59e0b;
+  --color-candy-brown: #78350f;
+
+  /* Font families — variables injected by next/font */
+  --font-heading: var(--font-pacifico), cursive;
+  --font-body: var(--font-nunito), sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Global resets */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-candy-cream);
+  color: var(--color-candy-brown);
 }
